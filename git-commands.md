@@ -35,3 +35,35 @@ Lists local branches and identifies the current branch
 git diff
 Shows staged changes compared with the last commit
 
+
+## Git Branching Commands
+
+### List branches
+git branch
+
+### Create a branch
+git branch feature-1
+
+### Switch to an existing branch
+git switch feature-1
+
+### Create and switch to a new branch
+git switch -c feature-2
+
+### Switch using older checkout command
+git checkout feature-1
+
+### Create and switch using checkout
+git checkout -b feature-2
+
+### View commit history
+git log --oneline
+
+### Delete a merged branch
+git branch -d feature-2
+
+### Force delete an unmerged branch
+git branch -D feature-2
+
+### Check current branch and working tree status
+git status
