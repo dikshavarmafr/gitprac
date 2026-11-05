@@ -67,3 +67,30 @@ git branch -D feature-2
 
 ### Check current branch and working tree status
 git status
+
+## GitHub Remote Commands
+
+### Add a remote repository
+git remote add origin <repository-url>
+
+### List remote repositories
+git remote -v
+
+### Push main branch
+git push -u origin main
+
+### Push a feature branch
+git push -u origin feature-1
+
+### List remote branches
+git branch -r
+
+### Fetch changes from remote
+git fetch origin
+
+### Pull changes from remote
+git pull
+
+### Difference between origin and upstream
+origin: Usually points to your own remote repository.
+upstream: Usually points to the original repository when working with a fork.
