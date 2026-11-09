@@ -94,3 +94,38 @@ git pull
 ### Difference between origin and upstream
 origin: Usually points to your own remote repository.
 upstream: Usually points to the original repository when working with a fork.
+
+## Git Merge — Hands-on Learnings
+
+### 1. What is a fast-forward merge?
+A fast-forward merge happens when the target branch has no independent commits. Git simply moves its pointer forward.
+
+Example: Merging feature-login into main.
+
+### 2. When does Git create a merge commit?
+When both branches have independent commits and their histories have diverged, Git creates a new commit with two parents.
+
+Example: Merging feature-signup into main.
+
+### 3. What is a merge conflict?
+A merge conflict occurs when Git cannot automatically combine competing changes, such as when two branches modify the same line differently.
+
+### 4. How do you resolve a merge conflict?
+1. Run git status.
+2. Open the conflicted file.
+3. Decide which changes to keep.
+4. Remove conflict markers.
+5. Run git add <filename>.
+6. Run git commit to complete the merge.
+
+### 5. What are Git conflict markers?
+- <<<<<<< HEAD: Current branch changes.
+- =======: Separates competing changes.
+- >>>>>>> branch-name: Incoming branch changes.
+
+### 6. What did I learn?
+- Fast-forward merges move branch pointers.
+- Diverged branches require a merge commit.
+- Merge conflicts require manual resolution.
+- git add marks conflicts as resolved.
+- git commit completes the merge.
